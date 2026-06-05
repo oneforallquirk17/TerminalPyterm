@@ -35,7 +35,14 @@ def execute_term():
             break
 
         partes = entrada.split()
-        entrada = partes[0] + " " + partes[1]
+
+        if not partes:
+            continue
+
+        if len(partes) < 2:
+            entrada = partes[0]
+        else:
+            entrada = partes[0] + " " + partes[1]
 
         match entrada:
             case "py -help":
@@ -94,7 +101,7 @@ def execute_term():
                 except OSError as e:
                     print(f"Erro ao criar diretório: {e}")
             case "py -list":
-                arquivos = os.listdir("..")
+                arquivos = os.listdir(".")
                 print("Arquivos e diretórios no diretório atual:")
                 for arquivo in arquivos:
                     print(f"  {arquivo}")
