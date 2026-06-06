@@ -8,13 +8,13 @@ def processar_ia(pergunta_usuario):
     with open(caminho_json, "r", encoding="utf-8") as file:
         dados = json.load(file)
 
-    pergunta_usuario = pergunta_usuario
+    pergunta_usuario = pergunta_usuario.lower()
 
     intencao_encontrada = None
 
     for intencao in dados["intents"]:
         for padrao in intencao["patterns"]:
-            if padrao in pergunta_usuario:
+            if padrao.lower() in pergunta_usuario:
                 intencao_encontrada = intencao
                 break
 
@@ -171,11 +171,11 @@ def execute_term():
             case "py -IA":
                 print("Seja bem-vindo ao pyterm IA! A inteligência artificial integrada ao nosso terminal.")
                 pergunta = " ".join(partes[2:])
-                print(processar_ia(pergunta))
-
                 if not pergunta:
                     print("Uso: py -IA <sua pergunta aqui>")
                     continue
+
+                print(processar_ia(pergunta))
             case _:
                 print(f"Comando '{entrada}' não reconhecido. Digite 'py -help' para ver os comandos disponíveis.")
 
