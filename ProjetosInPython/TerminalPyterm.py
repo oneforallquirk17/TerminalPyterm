@@ -1,5 +1,27 @@
+import random
+import json
 import os
 from datetime import datetime
+
+def processar_ia(pergunta_usuario):
+    caminho_json = os.path.join(os.path.dirname(__file__), "Treino.json")
+    with open(caminho_json, "r", encoding="utf-8") as file:
+        dados = json.load(file)
+
+    pergunta_usuario = pergunta_usuario
+
+    intencao_encontrada = None
+
+    for intencao in dados["intents"]:
+        for padrao in intencao["patterns"]:
+            if padrao in pergunta_usuario:
+                intencao_encontrada = intencao
+                break
+
+    if intencao_encontrada:
+        return random.choice(intencao_encontrada["responses"])
+    else:
+        return "Desculpe, não entendi sua pergunta. Por favor, tente novamente."
 
 def init_sistem():
     print("-"*10, "Seja bem-vindo ao Pyterm", "-"*10)
@@ -25,6 +47,8 @@ def listing_commands():
     print("  py -list: Lista os arquivos e diretórios do diretório atual")
     print("  py -delete: Exclui um arquivo ou diretório")
     print("  py -open: Abre um diretório ou arquivo")
+    print("  py -openApp: Abre um aplicativo instalado no computador")
+    print("  py -IA: Interage com a inteligência artificial")
 
 def execute_term():
     while True:
@@ -135,6 +159,23 @@ def execute_term():
                         print(f"O arquivo ou diretório '{nome_arquivo}' não existe.")
                 except OSError as e:
                     print(f"Erro ao abrir arquivo ou diretório: {e}")
+            case "py -openApp":
+                if len(partes) < 3:
+                    print("uso: py -openApp <nome_do_aplicativo>")
+                    continue
+                nome_aplicativo = " ".join(partes[2:])
+                try:
+                    os.startfile(nome_aplicativo)
+                except OSError as e:
+                    print(f"Erro ao abrir aplicativo: {e}")
+            case "py -IA":
+                print("Seja bem-vindo ao pyterm IA! A inteligência artificial integrada ao nosso terminal.")
+                pergunta = " ".join(partes[2:])
+                print(processar_ia(pergunta))
+
+                if not pergunta:
+                    print("Uso: py -IA <sua pergunta aqui>")
+                    continue
             case _:
                 print(f"Comando '{entrada}' não reconhecido. Digite 'py -help' para ver os comandos disponíveis.")
 
