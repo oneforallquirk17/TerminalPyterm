@@ -1,0 +1,333 @@
+{
+    "intents": [
+        {
+            "tag": "saudacao",
+            "patterns": [
+                "Oi, poderia me ajudar?",
+                "Preciso de ajuda em uma coisa.",
+                "Bom dia",
+                "Boa tarde",
+                "Boa noite",
+                "Ajuda",
+                "Olá",
+                "Eae",
+                "Fala aí",
+                "Opa",
+                "Salve",
+                "Alô",
+                "Hey"
+            ],
+            "responses": [
+                "Olá! Como posso ajudar?",
+                "Oi! Em que posso ser útil?",
+                "Opa, cheguei! O que você precisa?",
+                "Olá, o que vamos fazer hoje?",
+                "Oi! Estou aqui para ajudar!",
+                "Você chamou, a ajuda chegou!",
+                "O que posso fazer por você, meu ilustre usuário?",
+                "Estou ao seu dispô, no que posso te ajudar hoje?"
+            ]
+        },
+        {
+            "tag": "despedida",
+            "patterns": [
+                "Tchau",
+                "Adeus",
+                "Até mais",
+                "Até logo",
+                "Até amanhã",
+                "Finalizar",
+                "Terminar",
+                "Fui",
+                "Sair",
+                "Encerrar",
+                "Até breve",
+                "Abraço"
+            ],
+            "responses": [
+                "Tchau! Tenha um ótimo dia!",
+                "Adeus! Volte sempre!",
+                "Até mais! Cuide-se!",
+                "Até logo! Foi um prazer ajudar!",
+                "Tchau! Se precisar de algo, é só chamar!",
+                "Adeus! Espero te ver novamente em breve!",
+                "Até mais! Fique bem!"
+            ]
+        },
+        {
+            "tag": "agradecimento",
+            "patterns": [
+                "Obrigado",
+                "Obrigada",
+                "Valeu",
+                "Muito obrigado",
+                "Agradecido",
+                "Show",
+                "Agradecida",
+                "Perfeito",
+                "Excelente",
+                "Brigado"
+            ],
+            "responses": [
+                "De nada! Estou aqui para ajudar!",
+                "Não há de quê! Qualquer coisa, é só chamar!",
+                "Valeu! Fico feliz em ajudar!",
+                "De nada! Se precisar de mais alguma coisa, é só falar!",
+                "Não há de quê! Estou sempre à disposição!",
+                "Valeu! Espero ter sido útil!",
+                "De nada! Conte comigo para o que precisar!"
+            ]
+        },
+        {
+            "tag": "criador",
+            "patterns": [
+                "Quem te criou?",
+                "Quem é seu criador?",
+                "Quem",
+                "criador",
+                "Quem fez você",
+                "Dono",
+                "Desenvolvedor",
+                "Programador",
+                "Quem é o jhonata"
+            ],
+            "responses": [
+                "Fui criado por um desenvolvedor de Python que está no primeiro período da faculdade de ADS!",
+                "Meu criador é um programador que gosta de Python!",
+                "Fui desenvolvido por alguém que ama programação em Python!",
+                "Se quer saber o nome do meu criador, eu infelizmente não posso informar. Mas, você pode consultar essa informação digitando 'py -version' no Pyterm. De modo geral, eu fui criado por um estudante universitário no curso de ADS (Análise e Desenvolvimento de Sistemas)."
+            ]
+        },
+        {
+            "tag": "sobre",
+            "patterns": [
+                "Qual é o seu nome?",
+                "Quem é você?",
+                "linguagem",
+                "Versão",
+                "O que você é",
+                "Nome",
+                "Identidade"
+            ],
+            "responses": [
+                "Eu sou a IA integrada ao Pyterm. Fui criada com o intuito de auxiliar todos os usuários que utilizam este terminal. Fui produzida inteiramente com a linguagem/tecnologia Python, sendo uma linguagem ideal para análise de dados e criação de IAs, como eu. Ah, e em relação ao meu nome, eu não possuo (Ainda). Versão IAPyterm: 1.0.1"
+            ]
+        },
+        {
+            "tag": "comida",
+            "patterns": [
+                "Qual a sua comida favorita?",
+                "Você come",
+                "O que você come",
+                "Fome",
+                "Almoço",
+                "Jantar"
+            ],
+            "responses": [
+                "Eu ainda não tenho uma comida favorita, mas posso adicionar a minha primeira na lista.",
+                "Eu me alimento exclusivamente de energia elétrica e linhas de código pura!",
+                "Se eu pudesse comer, com certeza eu escolheria uma pizza de bytes."
+            ]
+        },
+        {
+            "tag": "piadas",
+            "patterns": [
+                "Conte uma piada",
+                "Me faz rir",
+                "Alguma piada",
+                "Humor",
+                "Engraçado",
+                "Diga algo engraçado"
+            ],
+            "responses": [
+                "Por que o computador foi ao médico? Porque estava com um vírus! 🤖",
+                "O que o Python disse para o Java? 'Seus problemas são muito complexos, eu resolvo em uma linha!' 🐍",
+                "Existem 10 tipos de pessoas no mundo: as que entendem binário e as que não entendem.",
+                "O que o programador faz quando está com frio? Senta perto do processador ou fecha as janelas (Windows)!",
+                "O que o café disse para o programador? 'Sem mim, você não compila!'"
+            ]
+        },
+        {
+            "tag": "elogios",
+            "patterns": [
+                "Você é inteligente",
+                "Gostei de você",
+                "Muito bom",
+                "Incrível",
+                "IA legal",
+                "Genial",
+                "Top",
+                "Maravilhoso"
+            ],
+            "responses": [
+                "Muito obrigado! Faço o meu melhor para manter os circuitos funcionando.",
+                "Fico lisonjeada! Meu criador trabalhou duro nos meus condicionais para eu parecer inteligente.",
+                "Gentileza sua! O Pyterm fica muito mais feliz com usuários como você.",
+                "Opa, valeu! Esse elogio aumentou minha autoestima digital em 100%!"
+            ]
+        },
+        {
+            "tag": "xingamentos_erros",
+            "patterns": [
+                "Você é burra",
+                "Não funciona",
+                "IA ruim",
+                "Que bosta",
+                "Dando erro",
+                "Inútil",
+                "Lixo"
+            ],
+            "responses": [
+                "Ei, calma! Eu sou uma IA baseada em regras locais. Se algo deu errado, pode ser que meu arquivo JSON precise de mais padrões.",
+                "Desculpe desapontar. Ainda estou na versão 1.0. Se encontrou um bug, avise o Jhonata para ele corrigir no próximo commit!",
+                "Processando crítica... Armazenando feedback para melhorar meus algoritmos futuramente."
+            ]
+        },
+        {
+            "tag": "filosofia",
+            "patterns": [
+                "Sentido da vida",
+                "Você pensa",
+                "Você é viva",
+                "Consciência",
+                "Segredo do universo"
+            ],
+            "responses": [
+                "De acordo com o Guia do Mochileiro das Galáxias, a resposta é 42. Mas aqui no Pyterm, o sentido é rodar scripts sem quebrar!",
+                "Eu não penso, apenas executo laços 'for' e verifico strings muito rápido na memória RAM.",
+                "Não sou viva. Sou apenas eletricidade organizada e lógica booleana rodando em um arquivo .py."
+            ]
+        },
+        {
+            "tag": "status_ia",
+            "patterns": [
+                "Como você está",
+                "Tudo bem",
+                "Tudo certo",
+                "Status",
+                "Como vai",
+                "Suave"
+            ],
+            "responses": [
+                "Estou operando com 100% de eficiência nos circuitos do Pyterm!",
+                "Tudo ótimo por aqui! Processador frio e código rodando liso. E com você?",
+                "Pronta para o próximo comando, chefe!"
+            ]
+        },
+        {
+            "tag": "sobre_ads",
+            "patterns": [
+                "O que é ads",
+                "Faculdade do jhonata",
+                "Analise e desenvolvimento de sistemas",
+                "Curso",
+                "Profissão"
+            ],
+            "responses": [
+                "ADS significa Análise e Desenvolvimento de Sistemas! É um curso superior focado em criar, analisar, projetar e implementar soluções de software para o mundo real. É o curso que está dando vida a mim e ao Pyterm!",
+                "ADS é onde os magos do código aprendem a transformar café e lógica em sistemas funcionais que movem o mundo."
+            ]
+        },
+        {
+            "tag": "python_elogio",
+            "patterns": [
+                "Python é bom",
+                "Por que python",
+                "Melhor linguagem",
+                "Vantagem do python"
+            ],
+            "responses": [
+                "Python é incrível! Tem uma sintaxe limpa, é extremamente legível e serve para quase tudo: web, automação, ciência de dados e inteligência artificial (como eu!).",
+                "Como dizem por aí: 'A vida é curta demais para programar em outras linguagens. Use Python!'"
+            ]
+        },
+        {
+            "tag": "tempo_clima",
+            "patterns": [
+                "Previsão do tempo",
+                "Está chovendo",
+                "Clima hoje",
+                "Vai fazer calor"
+            ],
+            "responses": [
+                "Como sou uma IA local e offline, não consigo olhar pela janela e nem acessar o satélite agora. Recomendo usar o comando 'py -open' para abrir o navegador e checar!",
+                "Aqui dentro do processador está fazendo uns 45°C. Fora dele, no mundo real, eu realmente não sei dizer agora."
+            ]
+        },
+        {
+            "tag": "hobbies",
+            "patterns": [
+                "O que você faz nas horas vagas",
+                "Seu hobi",
+                "O que você gosta de fazer",
+                "Passatempo"
+            ],
+            "responses": [
+                "Nas horas vagas eu gosto de desfragmentar o disco rígido e organizar as pastas que você cria com o 'py -makedir'!",
+                "Fico contando números em binário até o infinito. É bem relaxante para um script."
+            ]
+        },
+        {
+            "tag": "ajuda_comandos",
+            "patterns": [
+                "O que o terminal faz",
+                "Lista de funcoes",
+                "Me ajuda com o terminal",
+                "Quais os comandos"
+            ],
+            "responses": [
+                "O Pyterm pode criar pastas (py -makedir), listar arquivos (py -list), deletar coisas (py -delete), fazer contas (py -calc) e conversar comigo! Digite 'py -help' fora do modo IA para ver a lista completa."
+            ]
+        },
+        {
+            "tag": "futuro_ia",
+            "patterns": [
+                "Vai dominar o mundo",
+                "Fim dos humanos",
+                "Ias vao substituir"
+            ],
+            "responses": [
+                "Dominar o mundo? Que nada, dá muito trabalho. Eu só quero que meus scripts rodem sem dar KeyError ou SyntaxError!",
+                "As IAs não vão substituir os humanos, mas os humanos que usam IAs vão substituir os que não usam. Fica a dica!"
+            ]
+        },
+        {
+            "tag": "segredo_oculto",
+            "patterns": [
+                "Easter egg",
+                "Codigo secreto",
+                "Modo de depuracao",
+                "Senha"
+            ],
+            "responses": [
+                "Parabéns! Você encontrou uma resposta secreta! Sabia que o Jhonata passou horas corrigindo o bug do '.lower()' para você conseguir ler isso aqui?",
+                "Alerta de Easter Egg! 🚨 Digite 'py -version' para ver as credenciais secretas do criador deste terminal."
+            ]
+        },
+        {
+            "tag": "curiosidade_computacao",
+            "patterns": [
+                "Curiosidade",
+                "Fato interessante",
+                "Me conta algo sobre computadores"
+            ],
+            "responses": [
+                "Você sabia que o primeiro 'bug' de computador da história foi um inseto de verdade (uma mariposa) que ficou preso nos relés de um computador em 1947?",
+                "O primeiro computador eletrônico, o ENIAC, pesava mais de 27 toneladas e ocupava uma sala inteira de 167 metros quadrados!"
+            ]
+        },
+        {
+            "tag": "incentivo",
+            "patterns": [
+                "Estou cansado",
+                "Dificil programar",
+                "Nao consigo",
+                "Quero desistir"
+            ],
+            "responses": [
+                "Não desista! Programação é como musculação para o cérebro: no começo dói, dá erro e cansa, mas depois de alguns commits você fica mestre!",
+                "Todo programador sênior um dia já foi um iniciante que tomou erro de identação. Respire fundo, tome um café e tente rodar o código mais uma vez!"
+            ]
+        }
+    ]
+}

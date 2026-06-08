@@ -174,8 +174,8 @@ def execute_term():
                 if not pergunta:
                     print("Uso: py -IA <sua pergunta aqui>")
                     continue
-
-                print(processar_ia(pergunta))
+                resposta_ia = processar_ia(pergunta)
+                print(resposta_ia)
             case _:
                 print(f"Comando '{entrada}' não reconhecido. Digite 'py -help' para ver os comandos disponíveis.")
 
