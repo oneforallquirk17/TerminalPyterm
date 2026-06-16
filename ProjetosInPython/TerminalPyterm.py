@@ -23,6 +23,9 @@ def processar_ia(pergunta_usuario):
     else:
         return "Desculpe, não entendi sua pergunta. Por favor, tente novamente."
 
+def show_historic(used_comands):
+    print(used_comands)
+    
 def init_sistem():
     print("-"*10, "Seja bem-vindo ao Pyterm", "-"*10)
     print("-"*10, "Pyterm é um terminal de comandos feito totalmente em Python", "-"*10)
@@ -30,7 +33,7 @@ def init_sistem():
 
 def version_term():
     print("-"*10, "Pyterm version", "-"*10)
-    print("Version: 1.0.0")
+    print("Version: 1.1.0")
     print("@uthor: Jhonata carvalho")
     print("All rights reserved@2026")
 
@@ -41,7 +44,7 @@ def listing_commands():
     print("  py -clear: Limpa a tela")
     print("  py -date: Exibe a data e hora atual")
     print("  py -echo: Exibe uma mensagem personalizada")
-    print("  py -calc: Realiza operações matemáticas básicas")
+    print("  py -history: Exibe todos os comandos que o usuário digitou.")
     print("  py -version: Exibe a versão do Pyterm")
     print("  py -makedir: Cria um diretório")
     print("  py -list: Lista os arquivos e diretórios do diretório atual")
@@ -49,8 +52,11 @@ def listing_commands():
     print("  py -open: Abre um diretório ou arquivo")
     print("  py -openApp: Abre um aplicativo instalado no computador")
     print("  py -IA: Interage com a inteligência artificial")
+    print("  py -rename: Renomeia com segurança um arquivo.")
 
 def execute_term():
+    history_comands = set()
+
     while True:
         entrada = input("user@pyterm $> ").strip()
 
@@ -67,6 +73,7 @@ def execute_term():
             entrada = partes[0]
         else:
             entrada = partes[0] + " " + partes[1]
+            history_comands.add(entrada)
 
         match entrada:
             case "py -help":
@@ -83,35 +90,9 @@ def execute_term():
                     print(mensagem)
                 else:
                     print("Uso: py -echo <sua mensagem aqui>")
-            case "py -calc":
-                if len(partes) < 4:
-                    print("Uso: py -calc <número1> <operador> <número2>")
-                    print("Operadores suportados: +, -, *, /")
-                    continue
-                try:
-                    numero1 = float(partes[2])
-                    operador = partes[3]
-                    numero2 = float(partes[4])
-
-                    match operador:
-                        case "+":
-                            resultado = numero1 + numero2
-                        case "-":
-                            resultado = numero1 - numero2
-                        case "*":
-                            resultado = numero1 * numero2
-                        case "/":
-                            if numero2 == 0:
-                                print("Erro: Divisão por zero não é permitida.")
-                                continue
-                            resultado = numero1 / numero2
-                        case _:
-                            print("Operador inválido. Use +, -, *, ou /.")
-                            continue
-                    print(f"Resultado: {resultado:.1f}")
-
-                except ValueError:
-                    print("Erro: Certifique-se de que os números são válidos.") 
+            case "py -history":
+                print("Exibindo todos os comandos usados: ")
+                show_historic(history_comands)
             case "py -version":
                 version_term()
             case "py -makedir":
@@ -124,6 +105,21 @@ def execute_term():
                     print(f"Diretório '{nome_diretorio}' criado com sucesso.")
                 except OSError as e:
                     print(f"Erro ao criar diretório: {e}")
+            case "py -rename":
+                if len(partes) < 4:
+                    print("Uso: py -rename <nome_atual_do_arquivo_ou_diretório> <novo_nome_do_arquivo_ou_diretorio>")
+                    continue
+                nome_atual = partes[2]
+                novo_nome_do_arquivo_ou_diretorio = partes[3]
+                try:
+                    os.rename(nome_atual, novo_nome_do_arquivo_ou_diretorio)
+                    print(f"Arquivo ou diretório '{nome_atual}' foi renomeado para '{novo_nome_do_arquivo_ou_diretorio}' com sucesso!")
+                except FileNotFoundError:
+                    print(f"ERRO! O arquivo ou diretório '{nome_atual}', não foi encontrado.")
+                except FileExistsError:
+                    print(f"ERRO! Já existe um arquivo ou diretório chamado '{nome_atual}'")
+                except OSError as e:
+                    print(f"Erro no sistema ao renomear {e}.")
             case "py -list":
                 arquivos = os.listdir(".")
                 print("Arquivos e diretórios no diretório atual:")

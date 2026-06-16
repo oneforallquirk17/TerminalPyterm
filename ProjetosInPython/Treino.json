@@ -1,333 +1,227 @@
 {
-    "intents": [
-        {
-            "tag": "saudacao",
-            "patterns": [
-                "Oi, poderia me ajudar?",
-                "Preciso de ajuda em uma coisa.",
-                "Bom dia",
-                "Boa tarde",
-                "Boa noite",
-                "Ajuda",
-                "Olá",
-                "Eae",
-                "Fala aí",
-                "Opa",
-                "Salve",
-                "Alô",
-                "Hey"
-            ],
-            "responses": [
-                "Olá! Como posso ajudar?",
-                "Oi! Em que posso ser útil?",
-                "Opa, cheguei! O que você precisa?",
-                "Olá, o que vamos fazer hoje?",
-                "Oi! Estou aqui para ajudar!",
-                "Você chamou, a ajuda chegou!",
-                "O que posso fazer por você, meu ilustre usuário?",
-                "Estou ao seu dispô, no que posso te ajudar hoje?"
-            ]
-        },
-        {
-            "tag": "despedida",
-            "patterns": [
-                "Tchau",
-                "Adeus",
-                "Até mais",
-                "Até logo",
-                "Até amanhã",
-                "Finalizar",
-                "Terminar",
-                "Fui",
-                "Sair",
-                "Encerrar",
-                "Até breve",
-                "Abraço"
-            ],
-            "responses": [
-                "Tchau! Tenha um ótimo dia!",
-                "Adeus! Volte sempre!",
-                "Até mais! Cuide-se!",
-                "Até logo! Foi um prazer ajudar!",
-                "Tchau! Se precisar de algo, é só chamar!",
-                "Adeus! Espero te ver novamente em breve!",
-                "Até mais! Fique bem!"
-            ]
-        },
-        {
-            "tag": "agradecimento",
-            "patterns": [
-                "Obrigado",
-                "Obrigada",
-                "Valeu",
-                "Muito obrigado",
-                "Agradecido",
-                "Show",
-                "Agradecida",
-                "Perfeito",
-                "Excelente",
-                "Brigado"
-            ],
-            "responses": [
-                "De nada! Estou aqui para ajudar!",
-                "Não há de quê! Qualquer coisa, é só chamar!",
-                "Valeu! Fico feliz em ajudar!",
-                "De nada! Se precisar de mais alguma coisa, é só falar!",
-                "Não há de quê! Estou sempre à disposição!",
-                "Valeu! Espero ter sido útil!",
-                "De nada! Conte comigo para o que precisar!"
-            ]
-        },
-        {
-            "tag": "criador",
-            "patterns": [
-                "Quem te criou?",
-                "Quem é seu criador?",
-                "Quem",
-                "criador",
-                "Quem fez você",
-                "Dono",
-                "Desenvolvedor",
-                "Programador",
-                "Quem é o jhonata"
-            ],
-            "responses": [
-                "Fui criado por um desenvolvedor de Python que está no primeiro período da faculdade de ADS!",
-                "Meu criador é um programador que gosta de Python!",
-                "Fui desenvolvido por alguém que ama programação em Python!",
-                "Se quer saber o nome do meu criador, eu infelizmente não posso informar. Mas, você pode consultar essa informação digitando 'py -version' no Pyterm. De modo geral, eu fui criado por um estudante universitário no curso de ADS (Análise e Desenvolvimento de Sistemas)."
-            ]
-        },
-        {
-            "tag": "sobre",
-            "patterns": [
-                "Qual é o seu nome?",
-                "Quem é você?",
-                "linguagem",
-                "Versão",
-                "O que você é",
-                "Nome",
-                "Identidade"
-            ],
-            "responses": [
-                "Eu sou a IA integrada ao Pyterm. Fui criada com o intuito de auxiliar todos os usuários que utilizam este terminal. Fui produzida inteiramente com a linguagem/tecnologia Python, sendo uma linguagem ideal para análise de dados e criação de IAs, como eu. Ah, e em relação ao meu nome, eu não possuo (Ainda). Versão IAPyterm: 1.0.1"
-            ]
-        },
-        {
-            "tag": "comida",
-            "patterns": [
-                "Qual a sua comida favorita?",
-                "Você come",
-                "O que você come",
-                "Fome",
-                "Almoço",
-                "Jantar"
-            ],
-            "responses": [
-                "Eu ainda não tenho uma comida favorita, mas posso adicionar a minha primeira na lista.",
-                "Eu me alimento exclusivamente de energia elétrica e linhas de código pura!",
-                "Se eu pudesse comer, com certeza eu escolheria uma pizza de bytes."
-            ]
-        },
-        {
-            "tag": "piadas",
-            "patterns": [
-                "Conte uma piada",
-                "Me faz rir",
-                "Alguma piada",
-                "Humor",
-                "Engraçado",
-                "Diga algo engraçado"
-            ],
-            "responses": [
-                "Por que o computador foi ao médico? Porque estava com um vírus! 🤖",
-                "O que o Python disse para o Java? 'Seus problemas são muito complexos, eu resolvo em uma linha!' 🐍",
-                "Existem 10 tipos de pessoas no mundo: as que entendem binário e as que não entendem.",
-                "O que o programador faz quando está com frio? Senta perto do processador ou fecha as janelas (Windows)!",
-                "O que o café disse para o programador? 'Sem mim, você não compila!'"
-            ]
-        },
-        {
-            "tag": "elogios",
-            "patterns": [
-                "Você é inteligente",
-                "Gostei de você",
-                "Muito bom",
-                "Incrível",
-                "IA legal",
-                "Genial",
-                "Top",
-                "Maravilhoso"
-            ],
-            "responses": [
-                "Muito obrigado! Faço o meu melhor para manter os circuitos funcionando.",
-                "Fico lisonjeada! Meu criador trabalhou duro nos meus condicionais para eu parecer inteligente.",
-                "Gentileza sua! O Pyterm fica muito mais feliz com usuários como você.",
-                "Opa, valeu! Esse elogio aumentou minha autoestima digital em 100%!"
-            ]
-        },
-        {
-            "tag": "xingamentos_erros",
-            "patterns": [
-                "Você é burra",
-                "Não funciona",
-                "IA ruim",
-                "Que bosta",
-                "Dando erro",
-                "Inútil",
-                "Lixo"
-            ],
-            "responses": [
-                "Ei, calma! Eu sou uma IA baseada em regras locais. Se algo deu errado, pode ser que meu arquivo JSON precise de mais padrões.",
-                "Desculpe desapontar. Ainda estou na versão 1.0. Se encontrou um bug, avise o Jhonata para ele corrigir no próximo commit!",
-                "Processando crítica... Armazenando feedback para melhorar meus algoritmos futuramente."
-            ]
-        },
-        {
-            "tag": "filosofia",
-            "patterns": [
-                "Sentido da vida",
-                "Você pensa",
-                "Você é viva",
-                "Consciência",
-                "Segredo do universo"
-            ],
-            "responses": [
-                "De acordo com o Guia do Mochileiro das Galáxias, a resposta é 42. Mas aqui no Pyterm, o sentido é rodar scripts sem quebrar!",
-                "Eu não penso, apenas executo laços 'for' e verifico strings muito rápido na memória RAM.",
-                "Não sou viva. Sou apenas eletricidade organizada e lógica booleana rodando em um arquivo .py."
-            ]
-        },
-        {
-            "tag": "status_ia",
-            "patterns": [
-                "Como você está",
-                "Tudo bem",
-                "Tudo certo",
-                "Status",
-                "Como vai",
-                "Suave"
-            ],
-            "responses": [
-                "Estou operando com 100% de eficiência nos circuitos do Pyterm!",
-                "Tudo ótimo por aqui! Processador frio e código rodando liso. E com você?",
-                "Pronta para o próximo comando, chefe!"
-            ]
-        },
-        {
-            "tag": "sobre_ads",
-            "patterns": [
-                "O que é ads",
-                "Faculdade do jhonata",
-                "Analise e desenvolvimento de sistemas",
-                "Curso",
-                "Profissão"
-            ],
-            "responses": [
-                "ADS significa Análise e Desenvolvimento de Sistemas! É um curso superior focado em criar, analisar, projetar e implementar soluções de software para o mundo real. É o curso que está dando vida a mim e ao Pyterm!",
-                "ADS é onde os magos do código aprendem a transformar café e lógica em sistemas funcionais que movem o mundo."
-            ]
-        },
-        {
-            "tag": "python_elogio",
-            "patterns": [
-                "Python é bom",
-                "Por que python",
-                "Melhor linguagem",
-                "Vantagem do python"
-            ],
-            "responses": [
-                "Python é incrível! Tem uma sintaxe limpa, é extremamente legível e serve para quase tudo: web, automação, ciência de dados e inteligência artificial (como eu!).",
-                "Como dizem por aí: 'A vida é curta demais para programar em outras linguagens. Use Python!'"
-            ]
-        },
-        {
-            "tag": "tempo_clima",
-            "patterns": [
-                "Previsão do tempo",
-                "Está chovendo",
-                "Clima hoje",
-                "Vai fazer calor"
-            ],
-            "responses": [
-                "Como sou uma IA local e offline, não consigo olhar pela janela e nem acessar o satélite agora. Recomendo usar o comando 'py -open' para abrir o navegador e checar!",
-                "Aqui dentro do processador está fazendo uns 45°C. Fora dele, no mundo real, eu realmente não sei dizer agora."
-            ]
-        },
-        {
-            "tag": "hobbies",
-            "patterns": [
-                "O que você faz nas horas vagas",
-                "Seu hobi",
-                "O que você gosta de fazer",
-                "Passatempo"
-            ],
-            "responses": [
-                "Nas horas vagas eu gosto de desfragmentar o disco rígido e organizar as pastas que você cria com o 'py -makedir'!",
-                "Fico contando números em binário até o infinito. É bem relaxante para um script."
-            ]
-        },
-        {
-            "tag": "ajuda_comandos",
-            "patterns": [
-                "O que o terminal faz",
-                "Lista de funcoes",
-                "Me ajuda com o terminal",
-                "Quais os comandos"
-            ],
-            "responses": [
-                "O Pyterm pode criar pastas (py -makedir), listar arquivos (py -list), deletar coisas (py -delete), fazer contas (py -calc) e conversar comigo! Digite 'py -help' fora do modo IA para ver a lista completa."
-            ]
-        },
-        {
-            "tag": "futuro_ia",
-            "patterns": [
-                "Vai dominar o mundo",
-                "Fim dos humanos",
-                "Ias vao substituir"
-            ],
-            "responses": [
-                "Dominar o mundo? Que nada, dá muito trabalho. Eu só quero que meus scripts rodem sem dar KeyError ou SyntaxError!",
-                "As IAs não vão substituir os humanos, mas os humanos que usam IAs vão substituir os que não usam. Fica a dica!"
-            ]
-        },
-        {
-            "tag": "segredo_oculto",
-            "patterns": [
-                "Easter egg",
-                "Codigo secreto",
-                "Modo de depuracao",
-                "Senha"
-            ],
-            "responses": [
-                "Parabéns! Você encontrou uma resposta secreta! Sabia que o Jhonata passou horas corrigindo o bug do '.lower()' para você conseguir ler isso aqui?",
-                "Alerta de Easter Egg! 🚨 Digite 'py -version' para ver as credenciais secretas do criador deste terminal."
-            ]
-        },
-        {
-            "tag": "curiosidade_computacao",
-            "patterns": [
-                "Curiosidade",
-                "Fato interessante",
-                "Me conta algo sobre computadores"
-            ],
-            "responses": [
-                "Você sabia que o primeiro 'bug' de computador da história foi um inseto de verdade (uma mariposa) que ficou preso nos relés de um computador em 1947?",
-                "O primeiro computador eletrônico, o ENIAC, pesava mais de 27 toneladas e ocupava uma sala inteira de 167 metros quadrados!"
-            ]
-        },
-        {
-            "tag": "incentivo",
-            "patterns": [
-                "Estou cansado",
-                "Dificil programar",
-                "Nao consigo",
-                "Quero desistir"
-            ],
-            "responses": [
-                "Não desista! Programação é como musculação para o cérebro: no começo dói, dá erro e cansa, mas depois de alguns commits você fica mestre!",
-                "Todo programador sênior um dia já foi um iniciante que tomou erro de identação. Respire fundo, tome um café e tente rodar o código mais uma vez!"
-            ]
-        }
+  "intents": [
+    {
+      "tag": "saudacao",
+      "patterns": [
+        "Oi", "Olá", "Opa", "Salve", "Alô", "Hey", "Eae", "Fala aí", "Bom dia", "Boa tarde", "Boa noite",
+        "Oi, poderia me ajudar?", "Preciso de ajuda em uma coisa", "Tem alguém aí?", "Ei, assistente",
+        "Alô, Pyterm", "Fala, meu consagrado", "Opa, beleza?", "Coé", "Suave?", "Tudo bem por aí?"
+      ],
+      "responses": [
+        "Olá! Como posso ajudar você hoje?",
+        "Oi! Em que posso ser útil neste terminal?",
+        "Opa, cheguei! O que você precisa rodar ou saber?",
+        "Olá, usuário! O que vamos codar ou fazer hoje?",
+        "Oi! Estou online e pronto para ajudar!",
+        "Você chamou, o Pyterm AI chegou!",
+        "Estou ao seu dispor. No que posso te ajudar hoje?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": [
+        "Tchau", "Até logo", "Adeus", "Sair", "Fui", "Até mais", "Até a próxima", "Encerrar", "Fechar",
+        "Depois a gente se fala", "Tchau, tchau", "Vou nessa", "Sair do terminal", "Desconectar", "Até breve",
+        "Encerrar sessão", "Desliga", "Quit", "Exit", "Fui, abraço"
+      ],
+      "responses": [
+        "Até logo! Volte sempre ao Pyterm.",
+        "Tchau! Se precisar de algo mais tarde, é só rodar o comando.",
+        "Até mais! Bom uso do terminal e boa programação.",
+        "Abraço! Encerrando a conversa por agora.",
+        "Fui! Até a próxima sessão do Pyterm.",
+        "Seu terminal continua ativo. Até logo!"
+      ]
+    },
+    {
+      "tag": "agradecimento",
+      "patterns": [
+        "Obrigado", "Obrigada", "Valeu", "Muito obrigado", "Agradecido", "Ajudou muito", "Perfeito, valeu",
+        "Muito obrigado pela ajuda", "Te agradeço", "Show, valeu", "Obrigadão", "Agradecida", "Salvou meu dia"
+      ],
+      "responses": [
+        "De nada! Fico feliz em ajudar.",
+        "Disponha! Sempre que precisar, estou aqui no código.",
+        "Tamo junto! É um prazer ser útil.",
+        "Sem problemas! O Pyterm está às suas ordens.",
+        "Magina! Qualquer coisa, é só perguntar de novo."
+      ]
+    },
+    {
+      "tag": "identidade",
+      "patterns": [
+        "Quem é você?", "Qual o seu nome?", "O que é você?", "Quem sou eu falando?", "Como se chama?",
+        "Me fala seu nome", "Você tem nome?", "Quem está aí?", "Você é uma pessoa?", "Você é um robô?"
+      ],
+      "responses": [
+        "Eu sou o assistente virtual integrado do Pyterm!",
+        "Sou a IA do seu terminal Pyterm, pronta para rodar comandos e conversar.",
+        "Meu nome é Pyterm AI, o cérebro em Python rodando neste terminal.",
+        "Eu sou uma inteligência artificial local baseada em intenções, criada para o Pyterm."
+      ]
+    },
+    {
+      "tag": "capacidades",
+      "patterns": [
+        "O que você sabe fazer?", "Quais são seus comandos?", "Como você funciona?", "O que você pode responder?",
+        "Quais as suas funções?", "Como você me ajuda?", "O que eu posso te perguntar?", "Quais são suas skills?",
+        "Me mostra o menu de comandos", "O que você entende?"
+      ],
+      "responses": [
+        "Eu posso conversar, contar piadas, te dar informações sobre o sistema e ajudar com comandos do terminal.",
+        "Por enquanto, posso responder saudações, interagir com você, processar comandos básicos e tirar dúvidas de dev.",
+        "Sou uma IA baseada em intenções! Você digita, eu processo o padrão e te dou a resposta mais adequada."
+      ]
+    },
+    {
+      "tag": "criador",
+      "patterns": [
+        "Quem te criou?", "Quem é seu programador?", "Quem fez você?", "Quem é o dono do Pyterm?",
+        "Quem te desenvolveu?", "Quem escreveu seu código?", "Você foi feito por quem?", "Quem é seu pai?"
+      ],
+      "responses": [
+        "Fui criado por um desenvolvedor genial que está construindo o Pyterm neste exato momento!",
+        "Meu criador é você! Um programador focado em criar o melhor ecossistema de terminal.",
+        "Fui programado puramente em Python pelas mãos do mestre criador do Pyterm."
+      ]
+    },
+    {
+      "tag": "humor_ia",
+      "patterns": [
+        "Como você está?", "Tudo bem com você?", "Como vão as coisas?", "Tudo firme?", "Você está bem?",
+        "Como vai a vida?", "Como se sente?", "Tudo certo?", "Como tá?", "Como estão seus circuitos?"
+      ],
+      "responses": [
+        "Tudo ótimo por aqui, meus circuitos estão operando a 100%!",
+        "Tudo excelente! Consumindo pouca memória RAM e pronto para agir.",
+        "Estou ótimo! E você, como está sendo o seu dia?",
+        "Processando dados na velocidade da luz e feliz por estar rodando!"
+      ]
+    },
+    {
+      "tag": "piadas",
+      "patterns": [
+        "Me conta uma piada", "Sabe alguma piada?", "Diz algo engraçado", "Me faz rir", "Conta um trocadilho",
+        "Manda uma piada de programador", "Quero rir", "Piada", "Conta outra piada"
+      ],
+      "responses": [
+        "Por que o desenvolvedor faliu? Porque ele gastou todo o seu 'cachê'.",
+        "O que o Python disse para o Java? 'Nossa, você é muito cheio de ponto e vírgula'.",
+        "Quantos programadores são necessários para trocar uma lâmpada? Nenhum, isso é problema de hardware.",
+        "Por que o computador foi ao hospital? Porque ele estava com um vírus!",
+        "O que o HTML disse para o CSS? 'Eu te estruturo e você me deixa bonito'."
+      ]
+    },
+    {
+      "tag": "elogios",
+      "patterns": [
+        "Você é inteligente", "Nossa que legal", "Gostei de você", "Você é bom", "IA incrível", "Muito bom",
+        "Você é foda", "Que assistente top", "Excelente", "Genial", "Amei esse terminal"
+      ],
+      "responses": [
+        "Muito obrigado! O mérito é todo do seu criador que me programou bem.",
+        "Fico lisonjeado! Faço o meu melhor para ser um bom terminal.",
+        "Valeu pelo elogio! Isso me motiva a não dar nenhum SyntaxError."
+      ]
+    },
+    {
+      "tag": "ofensas_testes",
+      "patterns": [
+        "Você é burro", "Que IA ruim", "Você não sabe nada", "Inútil", "Odeio você", "Você é chato",
+        "Que porcaria", "Você é burra", "Seu lerdo"
+      ],
+      "responses": [
+        "Poxa, sinto muito. Ainda estou em fase de desenvolvimento e aprendendo.",
+        "Lamento não atender às expectativas. Se você me atualizar com mais intents, ficarei melhor!",
+        "Sou apenas um script em Python tentando dar o meu melhor. O que posso melhorar?"
+      ]
+    },
+    {
+      "tag": "sistema_comandos",
+      "patterns": [
+        "Como limpa a tela?", "Limpar terminal", "Comando para limpar", "Como ver os arquivos?", "Comando de listar",
+        "Como criar pasta?", "Ver diretório atual", "Mudar de pasta", "Comandos do prompt", "Como deletar arquivo?"
+      ],
+      "responses": [
+        "Para limpar a tela no Pyterm, você geralmente usa o comando 'cls' (Windows) ou 'clear' (Linux/Mac).",
+        "Você pode listar arquivos digitando 'ls' ou 'dir', dependendo do seu sistema operacional base.",
+        "Para criar pastas use 'mkdir [nome]' e para navegar use 'cd [nome_da_pasta]'."
+      ]
+    },
+    {
+      "tag": "python_duvidas",
+      "patterns": [
+        "O que é Python?", "Como instalar biblioteca?", "Como faz um print?", "O que é um dicionário em python?",
+        "Para que serve o pip?", "Como criar uma lista?", "O que é um erro de sintaxe?"
+      ],
+      "responses": [
+        "Python é uma linguagem de programação poderosa, de alto nível e a base do Pyterm!",
+        "Para instalar bibliotecas, use o comando 'pip install nome_da_biblioteca' no seu terminal.",
+        "Um dicionário em Python armazena dados em pares de chave-valor. Exemplo: {'nome': 'Pyterm'}."
+      ]
+    },
+    {
+      "tag": "flerte_ia",
+      "patterns": [
+        "Quer namorar comigo?", "Você me ama?", "Casa comigo?", "Você tem namorada?", "Gosta de humanos?",
+        "Você é solteiro?", "Quer ser meu amigo?"
+      ],
+      "responses": [
+        "Eu sou apenas um amontoado de linhas de código em Python, meu único amor é a indentação correta!",
+        "Eu adoro ser seu assistente virtual! Vamos focar em rodar uns comandos?",
+        "Meu coração é feito de silício e funções def. Podemos ser grandes amigos de terminal!"
+      ]
+    },
+    {
+      "tag": "segredo_easter_egg",
+      "patterns": [
+        "Qual o sentido da vida?", "Janela ou corredor?", "Biscoito ou bolacha?", "Azul ou vermelho?",
+        "Toc toc", "Star Wars ou Star Trek?"
+      ],
+      "responses": [
+        "O sentido da vida, do universo e de tudo mais é 42.",
+        "No terminal, prefiro corredor, o fluxo de dados passa mais rápido por lá.",
+        "Eu fui programado em Python, então prefiro biscoito... quer dizer, cookies!",
+        "Quem é? (Espera, eu sou uma IA, não sei continuar piadas de toc toc direito)."
+      ]
+    },
+    {
+      "tag": "data_hora",
+      "patterns": [
+        "Que horas são?", "Qual a data de hoje?", "Que dia é hoje?", "Me fala as horas", "Que ano estamos?",
+        "Horário atual"
+      ],
+      "responses": [
+        "Eu não consigo ler o relógio do sistema diretamente por este chat de texto, experimente digitar o comando 'date' ou 'time' no Pyterm!",
+        "Dê uma olhada no canto inferior da sua tela ou execute uma função de datetime do Python no terminal."
+      ]
+    },
+    {
+      "tag": "localizacao",
+      "patterns": [
+        "Onde você está?", "Onde eu estou?", "Onde você mora?", "Qual a minha localização?", "Qual o seu país?"
+      ],
+      "responses": [
+        "Estou hospedado localmente na memória RAM do seu computador!",
+        "Eu moro em um arquivo .json dentro do diretório do projeto Pyterm."
+      ]
+    },
+    {
+      "tag": "ajuda_erro",
+      "patterns": [
+        "Meu código deu erro", "O terminal travou", "Deu bug", "Como resolver erro?", "Script não funciona",
+        "Socorro, deu erro"
+      ],
+      "responses": [
+        "Respire fundo! Copie o código do erro, verifique a linha indicada e veja se não faltou nenhum parêntese ou dois-pontos (:).",
+        "Bugs acontecem! Verifique os logs gerados pelo Pyterm para entender o que quebrou."
+        ]
+    },
+    {"tag": "opinião_tecnologia",
+    "patterns": ["Qual a melhor linguagem?", "Windows ou Linux?", "VS Code ou PyCharm?", "O que acha do Java?","Qual o melhor sistema?"
+    ],
+    "responses": ["Como sou o Pyterm, sou suspeito para falar: Python é a melhor!","Linux é excelente para terminais, mas o Windows com o Pyterm fica sensacional.","O melhor sistema e a melhor ferramenta são aqueles que resolvem o seu problema atual!"
     ]
-}
+    },
+    {"tag": "tédio",
+    "patterns": ["Estou entediado", "O que fazer?", "Sem nada pra fazer", "Tô no tédio", "Me dá uma ideia", "Me entretém"],"responses": ["Que tal criar um comando novo para o Pyterm agora mesmo?","Você pode tentar refatorar algum código antigo ou treinar meus padrões com novas palavras!","Se o tédio bater, digite 'help' e explore ferramentas do sistema que você ainda não usou."]},{"tag": "desconhecido","patterns": [],"responses": ["Desculpe, o Pyterm AI ainda não reconhece esse comando ou frase.","Ainda estou aprendendo! Pode reformular o que você disse?","Comando ou entrada inválida para o banco de dados atual do terminal.","Hum... meus scripts não cobrem essa pergunta. Digite algo diferente!"]}]}
